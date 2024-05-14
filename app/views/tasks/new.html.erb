@@ -1,0 +1,17 @@
+<div class="box">
+<h1 class="title">Add a new Task</h1>
+<div class="columns">
+  <div class="column">
+    <%= form_with model: @task do |f| %>
+      <%= f.label :title %>
+      <%= f.text_field :title, class: "input" %>
+      <%= f.label :details %>
+      <%= f.text_field :details, class: "input" %>
+      <%= f.submit value: "Add task", class: "button is-link my-5" %>
+    <% end %>
+  </div>
+</div>
+<%= link_to tasks_path do%>
+  <button class="button is-link">Go back to the homepage</button>
+<% end %>
+</div>

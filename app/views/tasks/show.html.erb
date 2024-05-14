@@ -1,0 +1,14 @@
+<div class="box">
+<h1 class="title"><%= @task.title %> </h1>
+<div class="message">
+<p class=" message-body subtitle my-3"><%= @task.details %></p>
+</div>
+<%= link_to edit_path do%>
+  <button class="button is-link my-3 px-3">Edit</button>
+<% end %>
+
+
+<%= link_to tasks_path do%>
+  <button class="button is-link my-3 px-3">Go back to the homepage</button>
+<% end %>
+</div>
